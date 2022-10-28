@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dcf69ffbc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <img src="images/talhatariqlogo.png" alt="Logo Image" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Software Developer</p>
+                <h1>I'm <span>Talha Tariq</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************About************** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/UserPic1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Student of Computer Science in Goverenment College University Lahore and also working as a Junior Software Developer in Leads4Contact. Most of my work is realted to Database but I also work with C#, .Net, Devexpress like Technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Window Development</span><br>Window App Development using Devexpress</li>
+                            <li><span>Mobile Development</span><br>Andriod/IOS Development using Xamarin</li>
+                            <li><span>Database</span><br>Sql/Oracle</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Present</span><br>Junior Software Developer at Leads4Contact</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>BS in Computer Science from GCU Lahore</li>
+                            <li><span>2018-2020</span><br>FSc Pre-Enginnering from Civil Lines College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************Services************** -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>  
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt odit eligendi vel saepe omnis! Ex quibusdam laudantium error quidem maxime est reprehenderit. Velit minima quisquam labore recusandae aperiam corporis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt odit eligendi vel saepe omnis! Ex quibusdam laudantium error quidem maxime est reprehenderit. Velit minima quisquam labore recusandae aperiam corporis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt odit eligendi vel saepe omnis! Ex quibusdam laudantium error quidem maxime est reprehenderit. Velit minima quisquam labore recusandae aperiam corporis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************Portfolio************** -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate quia dicta eius rerum, ab dolorum non repellendus, molestias, quas esse. Nihil tempore excepturi cum aperiam numquam accusamus distinctio quo.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Expenses Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate quia dicta eius rerum, ab dolorum non repellendus, molestias, quas esse. Nihil tempore excepturi cum aperiam numquam accusamus distinctio quo.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate quia dicta eius rerum, ab dolorum non repellendus, molestias, quas esse. Nihil tempore excepturi cum aperiam numquam accusamus distinctio quo.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ************Contact************** -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane "></i> tariqtalha936@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt "></i> +92 3144015417</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/talha.tariq.785" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Talha_k_logics" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/the_talha_tariq/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/talha-tariq-937067219/" target="_blank"><i class="fab fa-linkedin" ></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>©2022 Talha Tariq.All Rights Reserved | Design by Talha Tariq</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+       }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbywX1RcvoJgbhPF-izK5CsFVRaHnbo1r2q16_VxjVG8Ux64m9O80WgfOH8CsFENH3eN4A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
